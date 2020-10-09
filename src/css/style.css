@@ -6,6 +6,7 @@
 	/* border: solid 2px; */
 	width: 1200px;
 	margin: auto;
+	padding-top: 44px;
 }
 header{
 	display: flex;
@@ -17,14 +18,43 @@ header{
 	height: 40px;
 	font-size: 16px;
 	line-height: 24px;
+	border: 1px solid #D9D9D9;
+	border-radius: 2px;
+	background-image: url(../img/home.svg);
+	background-repeat: no-repeat;
+	background-position: left 11px center;
+	padding-left: 32px;
+
 }
 .logo{
 	display: inline-block;
 }
-button{
+.btn-enter{
 	width: 96px;
 	height: 40px;
 	left: 1101px;
 	top: 44px;
-	
+	background: #1890FF;
+	border: none;
+	border-radius: 2px;
+	font-size: 16px;
+	background-image: url(../img/enter.svg);
+	background-repeat: no-repeat;
+	background-position: left 18px center;
+	padding-left: 36px;
+}
+.btn-busket{
+	width: 113px;
+	height: 40px;
+	left: 1207px;
+	top: 44px;
+	background: #FFFFFF;
+	border: 1px solid #D9D9D9;
+	border-radius: 2px;
+	font-size: 16px;
+	line-height: 24px;
+	background-image: url(../img/busket.svg);
+	background-repeat: no-repeat;
+	background-position: left 14px center;
+	padding-left: 36px;
 }
