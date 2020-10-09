@@ -58,3 +58,8 @@ header{
 	background-position: left 14px center;
 	padding-left: 36px;
 }
+.promo{
+	background-image: url(../img/promo-pizza.png);
+	background-repeat: no-repeat;
+	
+}
