@@ -1,14 +1,16 @@
 
 *{
 	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
+/* ! ФУТЕР */
 .container {
-	/* border: solid 2px; */
 	width: 1200px;
 	margin: auto;
-	padding-top: 44px;
 }
 header{
+	padding-top: 44px;
+	padding-bottom: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -58,31 +60,25 @@ header{
 	background-position: left 14px center;
 	padding-left: 36px;
 }
+/* ! ЗАГОЛОВОК промо */
 .promo{
-	background: #FFF1B8;
+	background: #FFF1B8 url(../img/promo-pizza.png) no-repeat top right;
 	border-radius: 10px;
 	height: 300px;
 	filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
-	background-image: url(../img/promo-pizza.png);
-	background-repeat: no-repeat;
-	
-}
-.promo{
 	color:#302C34;
 	font-style: normal;
+	padding: 34px 70px; 
 
 }
-.promo,h1{
+.promo-title{
+	font-style: normal;
 	font-weight: bold;
 	font-size: 39px;
 	line-height: 46px;
-	margin-top: 46px;
-	padding-top: 68px;
-	/* padding-left: 70px; */
-	/* display: flex;
-	align-items: center; */
 }
-.promo,p{
+.promo-text{
+	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 28px;
