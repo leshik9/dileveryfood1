@@ -107,6 +107,7 @@ header{
 }
 /* ! БЛЮДА */
 .generalmenu{
+	padding-top: 44px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
@@ -118,6 +119,7 @@ header{
 		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 		border-radius: 7px;
 		overflow: hidden;
+		margin-bottom: 30px;
 }
 .menu-image {
 	border-radius: 7px 7px 0px 0px;
@@ -150,14 +152,13 @@ header{
 	line-height: 20px;
 	color: #FFFFFF;
 	background: #262626;
-	border-radius: 2px;
+	border-radius: 3px;
 	padding: 1px 8px;
 }
 
 .menu-reiting {
 	display: flex;
 	align-items: center;
-
 }
 
 .reiting {
@@ -170,6 +171,7 @@ header{
 	background-image: url(../img/star.svg);
 	background-repeat: no-repeat;
 	background-position: left center;
+	padding-top: 3px;
 }
 
 .price {
@@ -186,4 +188,8 @@ header{
 	font-size: 18px;
 	line-height: 32px;
 	color: #8C8C8C;
+	background-image: url(../img/dot.svg);
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+	padding-left: 23px;
 }
