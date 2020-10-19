@@ -8,7 +8,9 @@
 	width: 1200px;
 	margin: auto;
 	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
-	
+	/* background-position: -75px; */
+	margin-bottom: 46px;
+		
 }
 header{
 	padding-top: 44px;
@@ -21,9 +23,9 @@ header{
 	background-image: url(../img/home.svg);
 	width: 690px;
 }
-.logo{
+/* .logo{
 	display: inline-block;
-}
+} */
 .btn-enter{
 	width: 96px;
 	height: 40px;
@@ -194,4 +196,26 @@ header{
 	background-repeat: no-repeat;
 	background-position: left 10px center;
 	padding-left: 23px;
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 14px;
+	margin-bottom: 46px;
+}
+.footer-menu{
+	display: flex;
+}
+.navig{
+	display: flex;
+	padding-left: 35px;
+	align-items: center;
+}
+a{
+	padding-right: 15px;
+	text-decoration: none;
+	color: #595959;
+}
+.contacts{
+
 }
