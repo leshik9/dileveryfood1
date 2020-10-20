@@ -140,12 +140,15 @@ main{
 	display: flex;
 	align-items: center; /*!сентрировать по вертикали*/
 	justify-content: space-between;
+	/* margin: 0; */
 }
 .restoran {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 32px;
+	margin: 0;
+	
 }
 .time {
 	font-style: normal;
@@ -156,6 +159,7 @@ main{
 	background: #262626;
 	border-radius: 3px;
 	padding: 1px 8px;
+	margin: 0;
 }
 .menu-reiting {
 	display: flex;
