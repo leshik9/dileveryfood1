@@ -1,20 +1,15 @@
-
 *{
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
+	margin: auto;
 }
 /* ! ФУТЕР */
 .container {
-	width: 1200px;
-	margin: auto;
-	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
-	/* background-position: -75px; */
 	margin-bottom: 46px;
-		
 }
 header{
-	padding-top: 44px;
-	padding-bottom: 40px;
+	width: 1200px;
+	margin-top: 44px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -23,15 +18,13 @@ header{
 	background-image: url(../img/home.svg);
 	width: 690px;
 }
-/* .logo{
-	display: inline-block;
-} */
 .btn-enter{
 	width: 96px;
 	height: 40px;
 	left: 1101px;
 	top: 44px;
 	background: #1890FF;
+	color: #FFFFFF;
 	border: none;
 	border-radius: 2px;
 	font-size: 16px;
@@ -67,8 +60,16 @@ header{
 	background-position: left 10px center;
 	padding: 8px 32px;
 }
+main{
+	margin-top: 27px;
+	width: 1440px;
+	height: 1300px;
+	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
 /* ! ЗАГОЛОВОК промо */
 .promo{
+	width: 1200px;
+	margin-top: 49px;
 	background: #FFF1B8 url(../img/promo-pizza.png) no-repeat top right;
 	border-radius: 10px;
 	height: 300px;
@@ -76,7 +77,6 @@ header{
 	color:#302C34;
 	font-style: normal;
 	padding: 34px 70px; 
-
 }
 .promo-title{
 	font-style: normal;
@@ -92,6 +92,7 @@ header{
 }
 /* ! РЕСТОРАНЫ */
 .head1{
+	width: 1200px;
 	display: flex;
 	justify-content: space-between;
 	font-style: normal;
@@ -111,9 +112,10 @@ header{
 }
 /* ! БЛЮДА */
 .generalmenu{
+	width: 1200px;
 	padding-top: 44px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap; 			/*!перенос на новую строку*/
 	align-items: flex-start;
 	justify-content: space-between;
 }
@@ -129,26 +131,22 @@ header{
 	border-radius: 7px 7px 0px 0px;
 	width: 384px;
 	height: 250px;
-	object-fit: cover;
+	object-fit: cover; /*!обрезать картинку по размерам*/
 }
-
 .menu-text {
 	padding: 20px 23px 35px;
 }
-
 .menu-title {
 	display: flex;
-	align-items: center;
+	align-items: center; /*!сентрировать по вертикали*/
 	justify-content: space-between;
 }
-
 .restoran {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 32px;
 }
-
 .time {
 	font-style: normal;
 	font-weight: normal;
@@ -159,12 +157,10 @@ header{
 	border-radius: 3px;
 	padding: 1px 8px;
 }
-
 .menu-reiting {
 	display: flex;
 	align-items: center;
 }
-
 .reiting {
 	font-style: normal;
 	font-weight: bold;
@@ -177,7 +173,6 @@ header{
 	background-position: left center;
 	padding-top: 3px;
 }
-
 .price {
 	font-style: normal;
 	font-weight: normal;
@@ -185,7 +180,6 @@ header{
 	line-height: 32px;
 	color: #8C8C8C;
 }
-
 .category {
 	font-style: normal;
 	font-weight: normal;
@@ -198,24 +192,32 @@ header{
 	padding-left: 23px;
 }
 .footer{
+	width: 1200px;
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 14px;
-	margin-bottom: 46px;
+	margin: 60px auto 60px;
 }
 .footer-menu{
 	display: flex;
+	margin: 0;
 }
 .navig{
 	display: flex;
 	padding-left: 35px;
 	align-items: center;
 }
-a{
-	padding-right: 15px;
+.navig-link{
 	text-decoration: none;
 	color: #595959;
 }
-.contacts{
-
+.navig-link:not(:last-child){ /*! для всех кроме последнего*/
+	margin-right: 15px;
+}
+.social{
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+a:not(:last-child){
+	margin-right: 21px;
 }
