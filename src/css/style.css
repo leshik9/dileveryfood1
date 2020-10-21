@@ -14,9 +14,15 @@ header{
 	align-items: center;
 	justify-content: space-between;
 }
+.logo{
+	margin: 0;
+}
 .enter{
 	background-image: url(../img/home.svg);
 	width: 690px;
+}
+.btn{
+	margin: 0;
 }
 .btn-enter{
 	width: 96px;
@@ -64,7 +70,7 @@ main{
 	margin-top: 27px;
 	width: 1440px;
 	height: 1300px;
-	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%); /* !градиент подложка фон*/
 }
 /* ! ЗАГОЛОВОК промо */
 .promo{
@@ -122,7 +128,7 @@ main{
 .cart{
 		display: inline-block;
 		background: #FFFFFF;
-		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05); /* !тень на карточке*/
 		border-radius: 7px;
 		overflow: hidden;
 		margin-bottom: 30px;
@@ -138,7 +144,7 @@ main{
 }
 .menu-title {
 	display: flex;
-	align-items: center; /*!сентрировать по вертикали*/
+	align-items: center; /*!центрировать по вертикали*/
 	justify-content: space-between;
 	/* margin: 0; */
 }
@@ -162,8 +168,9 @@ main{
 	margin: 0;
 }
 .menu-reiting {
-	display: flex;
-	align-items: center;
+	margin-top: 10px;
+	/* display: flex; */
+	/* align-items: center; */
 }
 .reiting {
 	font-style: normal;
@@ -176,6 +183,7 @@ main{
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding-top: 3px;
+	/* margin: 0; */
 }
 .price {
 	font-style: normal;
@@ -193,7 +201,7 @@ main{
 	background-image: url(../img/dot.svg);
 	background-repeat: no-repeat;
 	background-position: left 10px center;
-	padding-left: 23px;
+	padding-left: 28px;
 }
 .footer{
 	width: 1200px;
