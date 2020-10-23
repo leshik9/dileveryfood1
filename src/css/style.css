@@ -6,9 +6,10 @@
 /* ! ФУТЕР */
 .container {
 	margin-bottom: 46px;
+	width: 1200px;
 }
 header{
-	width: 1200px;
+	/* width: 1200px; */
 	margin-top: 44px;
 	display: flex;
 	align-items: center;
@@ -19,7 +20,7 @@ header{
 }
 .enter{
 	background-image: url(../img/home.svg);
-	width: 690px;
+	flex: 0.8;
 }
 .btn{
 	margin: 0;
@@ -68,13 +69,13 @@ header{
 }
 main{
 	margin-top: 27px;
-	width: 1440px;
+	/* width: 1440px; */
 	height: 1300px;
 	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%); /* !градиент подложка фон*/
 }
 /* ! ЗАГОЛОВОК промо */
 .promo{
-	width: 1200px;
+	/* width: 1200px; */
 	margin-top: 49px;
 	background: #FFF1B8 url(../img/promo-pizza.png) no-repeat top right;
 	border-radius: 10px;
@@ -98,7 +99,7 @@ main{
 }
 /* ! РЕСТОРАНЫ */
 .head1{
-	width: 1200px;
+	/* width: 1200px; */
 	display: flex;
 	justify-content: space-between;
 	font-style: normal;
@@ -118,7 +119,7 @@ main{
 }
 /* ! БЛЮДА */
 .generalmenu{
-	width: 1200px;
+	/* width: 1200px; */
 	padding-top: 44px;
 	display: flex;
 	flex-wrap: wrap; 			/*!перенос на новую строку*/
@@ -132,6 +133,7 @@ main{
 		border-radius: 7px;
 		overflow: hidden;
 		margin-bottom: 30px;
+		flex-basis: 31%;   /* !процент занимаемой ширины*/
 }
 .menu-image {
 	border-radius: 7px 7px 0px 0px;
@@ -204,7 +206,7 @@ main{
 	padding-left: 28px;
 }
 .footer{
-	width: 1200px;
+	/* width: 1200px; */
 	display: flex;
 	justify-content: space-between;
 	margin: 60px auto 60px;
@@ -232,4 +234,20 @@ main{
 }
 a:not(:last-child){
 	margin-right: 21px;
+}
+
+/*!                             адаптив*/
+@media (max-width: 1366px) {
+	.container{
+		max-width: 960px;
+	}
+	main{
+		height: 1290px;
+	}
+	.category{
+		font-size: 12px;
+	}
+	/* .menu-image{
+		width: 305px;
+	} */
 }
