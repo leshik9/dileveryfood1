@@ -268,3 +268,33 @@ a:not(:last-child){
 		line-height: 20px;
 	}
 }
+@media(max-width:790px){
+	.container{
+		max-width: 580px;
+		padding-top: 30px;
+	}
+	.promo{
+		height: 170px;
+		background: #FFF1B8 url(../img/promo-pizza.png) no-repeat top right /390px;
+		padding: 16px 40px;
+		margin-top: 30px;
+	}
+	.promo-title{
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.promo-text{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.head1{
+		margin-top: 30px;
+	}
+	.title1{
+		font-size: 42px;
+		width: 430px;
+	}
+	.reiting, .price, .category{
+		font-size: 8px;
+	}
+}
