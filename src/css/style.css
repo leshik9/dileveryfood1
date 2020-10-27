@@ -353,49 +353,58 @@ a:not(:last-child){
 	}
 	main{
 		margin-top: 10px;
+		height: 2600px;
 	}
 	.promo {
-		height: 170px;
-		background: #FFF1B8 url(../img/promo-pizza.png) no-repeat top right /390px;
-		padding: 16px 40px;
+		height: 180px;
+		background: #FFF1B8 url(../img/promo-pizza.png)  no-repeat top left 60px /410px;
+		/* opacity: 50%; */
+		padding: 26px 20px;
 		margin-top: 0px;
 	}
-
 	.promo-title {
-		font-size: 24px;
-		line-height: 24px;
+		font-size: 26px;
+		line-height: 28px;
 	}
-
 	.promo-text {
-		font-size: 14px;
-		line-height: 16px;
-	}
-
-	.generalmenu {
-		padding-top: 26px;
+		font-size: 12px;
+		line-height: 14px;
 	}
 
 	.head1 {
-		margin-top: 30px;
+		margin-top: 20px;
+		display: inline-block;
+		/* width: 350px; */
+	}
+	.title1 {
+		font-size: 42px;
+		width: 350px;
+	}
+	.find{
+		width: 350px;
+		position: relative;
+		bottom: 0px;
 	}
 
+	.generalmenu {
+		padding-top: 20px;
+	}
+	.cart{
+		flex-basis: 100%;
+	}
 	.menu-text {
 		padding: 16px 16px 16px;
 	}
 
 	.restoran {
-		font-size: 24px;
+		font-size: 32px;
 	}
 
-	.title1 {
-		font-size: 42px;
-		width: 430px;
-	}
 
 	.reiting,
 	.price,
 	.category {
-		font-size: 12px;
+		font-size: 18px;
 	}
 
 	.category {
@@ -403,14 +412,28 @@ a:not(:last-child){
 	}
 
 	.footer {
-		margin: 30px auto 30px;
+		/* display: inline-block; */
+		margin: 80px auto 20px;
+		width: 350px;
 	}
-
+	.footer-menu{
+		display: inline-block;
+		/* width: 350px; */
+	}
 	.navig {
-		font-size: 12px;
-		padding-left: 20px;
+	display: inline-block;
+	padding-left: 0;
+	font-size: 14px;
+	position: relative;
+	bottom: 100px;
+	right: -5px;
+	width: 340px;
 	}
-
+	.social{
+		position: relative;
+		right: 132px;
+		bottom: 9px;
+	}
 	.navig-link:not(:last-child) {
 		/*! для всех кроме последнего*/
 		margin-right: 12px;
