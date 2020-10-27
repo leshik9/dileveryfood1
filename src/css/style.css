@@ -55,7 +55,7 @@ header{
 	padding-left: 36px;
 }
 .input{
-	width: 690px;
+	width: 236px;
 	height: 40px;
 	font-size: 16px;
 	line-height: 24px;
@@ -268,10 +268,14 @@ a:not(:last-child){
 		line-height: 20px;
 	}
 }
+/* !                     ipad  768px*/
 @media(max-width:790px){
+	main {
+		height: 1430px;
+	}
 	.container{
 		max-width: 580px;
-		padding-top: 30px;
+		/* padding-top: 0px; */
 	}
 	.promo{
 		height: 170px;
@@ -287,14 +291,129 @@ a:not(:last-child){
 		font-size: 14px;
 		line-height: 16px;
 	}
+	.generalmenu{
+		padding-top: 26px;
+	}
 	.head1{
 		margin-top: 30px;
+	}
+	.menu-text{
+		padding: 16px 16px 16px;
+	}
+	.restoran {
+		font-size: 24px;
 	}
 	.title1{
 		font-size: 42px;
 		width: 430px;
 	}
 	.reiting, .price, .category{
-		font-size: 8px;
+		font-size: 12px;
 	}
+	.category{
+		padding-left: 24px;
+	}
+	.footer {
+		margin: 30px auto 30px;
+	}
+	.navig {
+		font-size: 12px;
+		padding-left: 20px;
+	}
+.navig-link:not(:last-child) {
+	/*! для всех кроме последнего*/
+	margin-right: 12px;
+	}
+}
+/*!                   iphone    414px*/
+@media (max-width: 414px){
+	.container{
+		max-width: 350px;
+	}
+	header{
+		margin-top: 12px;
+		display: inline;
+	}
+	.logo{
+		margin: 18px auto;
+	}
+	.input{
+		width: 245px;
+		position: relative;
+		bottom: 32px;
+	}
+	.btn{
+		position: relative;
+		bottom: 16px;
+		display: flex;
+		justify-content: end;
+	}
+	.btn-busket{
+		margin-left: 37px;
+	}
+	main{
+		margin-top: 10px;
+	}
+	.promo {
+		height: 170px;
+		background: #FFF1B8 url(../img/promo-pizza.png) no-repeat top right /390px;
+		padding: 16px 40px;
+		margin-top: 0px;
+	}
+
+	.promo-title {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	.promo-text {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.generalmenu {
+		padding-top: 26px;
+	}
+
+	.head1 {
+		margin-top: 30px;
+	}
+
+	.menu-text {
+		padding: 16px 16px 16px;
+	}
+
+	.restoran {
+		font-size: 24px;
+	}
+
+	.title1 {
+		font-size: 42px;
+		width: 430px;
+	}
+
+	.reiting,
+	.price,
+	.category {
+		font-size: 12px;
+	}
+
+	.category {
+		padding-left: 24px;
+	}
+
+	.footer {
+		margin: 30px auto 30px;
+	}
+
+	.navig {
+		font-size: 12px;
+		padding-left: 20px;
+	}
+
+	.navig-link:not(:last-child) {
+		/*! для всех кроме последнего*/
+		margin-right: 12px;
+	}
+
 }
