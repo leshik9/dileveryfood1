@@ -3,11 +3,7 @@
 	font-family: 'Roboto', sans-serif;
 	margin: auto;
 }
-/* ! ФУТЕР */
-.container {
-	margin-bottom: 46px;
-	width: 1200px;
-}
+/* ! заголовок*/
 header{
 	margin-top: 44px;
 	display: flex;
@@ -66,35 +62,26 @@ header{
 	background-position: left 10px center;
 	padding: 8px 32px;
 }
+.container {
+	margin-bottom: 46px;
+	width: 1200px;
+}
 main{
 	margin-top: 27px;
 	height: 1300px;
 	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%); /* !градиент подложка фон*/
 }
-/* ! ЗАГОЛОВОК промо */
-.promo{
-	margin-top: 49px;
-	background: #FFF1B8 url(../img/promo-pizza.png) no-repeat top right;
-	border-radius: 10px;
-	height: 300px;
-	filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
-	color:#302C34;
-	font-style: normal;
-	padding: 34px 70px; 
+/* ! Страница ресторана*/
+.restoran-name{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	position: absolute;
+	width: 442px;
+	height: 42px;
+	margin-bottom: 44px;
 }
-.promo-title{
-	font-style: normal;
-	font-weight: bold;
-	font-size: 39px;
-	line-height: 46px;
-}
-.promo-text{
-	font-style: normal;
-	font-weight: normal;
-	font-size: 24px;
-	line-height: 28px;
-}
-/* ! РЕСТОРАНЫ */
 .head1{
 	display: flex;
 	justify-content: space-between;
@@ -440,3 +427,4 @@ a:not(:last-child){
 	}
 
 }
+
