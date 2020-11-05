@@ -309,10 +309,6 @@ a:not(:last-child){
 	.restoran {
 		font-size: 24px;
 	}
-	.title1{
-		/* font-size: 42px; */
-		/* width: 430px; */
-	}
 	.reiting, .price, .category{
 		font-size: 12px;
 	}
@@ -380,10 +376,6 @@ a:not(:last-child){
 	.head1 {
 		margin-top: 20px;
 		display: inline-block;
-		/* width: 350px; */
-	}
-	.title1 {
-		/* font-size: 42px; */
 		/* width: 350px; */
 	}
 	.find{
