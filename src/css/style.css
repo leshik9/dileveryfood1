@@ -71,17 +71,32 @@ main{
 	height: 1300px;
 	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%); /* !градиент подложка фон*/
 }
-/* ! Страница ресторана*/
-.restoran-name{
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 0px;
-	position: absolute;
-	width: 442px;
-	height: 42px;
-	margin-bottom: 44px;
+/* ! ЗАГОЛОВОК промо */
+.promo {
+	margin-top: 49px;
+	background: #FFF1B8 url(../img/promo-pizza.png) no-repeat top right;
+	border-radius: 10px;
+	height: 300px;
+	filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.1));
+	color: #302C34;
+	font-style: normal;
+	padding: 34px 70px;
 }
+
+.promo-title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 39px;
+	line-height: 46px;
+}
+
+.promo-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+}
+/* ! Страница ресторана*/
 .head1{
 	display: flex;
 	justify-content: space-between;
@@ -94,7 +109,8 @@ main{
 }
 .title1{
 	margin: 0;
-	width: 190px;
+	/* width: 190px; */
+	font-size: 36px;
 }
 .find{
 	background-image: url(../img/find.svg);
@@ -116,6 +132,9 @@ main{
 		overflow: hidden;
 		margin-bottom: 30px;
 		flex-basis: 31%;   /* !процент занимаемой ширины*/
+}
+.cart:hover{
+	transform: scale(1.02);
 }
 .menu-image {
 	border-radius: 7px 7px 0px 0px;
@@ -291,8 +310,8 @@ a:not(:last-child){
 		font-size: 24px;
 	}
 	.title1{
-		font-size: 42px;
-		width: 430px;
+		/* font-size: 42px; */
+		/* width: 430px; */
 	}
 	.reiting, .price, .category{
 		font-size: 12px;
@@ -364,8 +383,8 @@ a:not(:last-child){
 		/* width: 350px; */
 	}
 	.title1 {
-		font-size: 42px;
-		width: 350px;
+		/* font-size: 42px; */
+		/* width: 350px; */
 	}
 	.find{
 		width: 350px;

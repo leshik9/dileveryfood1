@@ -3,12 +3,13 @@
 	font-family: 'Roboto', sans-serif;
 	margin: auto;
 }
-.container {
-	margin-bottom: 44px auto 60px;
-	width: 1200px;
+body{
+	width: 1440px;
+	margin: auto;
 }
 header{
 	margin-top: 44px;
+	width: 1200px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -33,10 +34,12 @@ header{
 	font-size: 16px;
 	background-image: url(../img/enter.svg);
 	background-repeat: no-repeat;
-	background-position: left 18px center;
-	padding-left: 36px;
+	background-position: left 10px center;
+	text-align: right;
+padding-right: 16px;
 }
 .btn-busket{
+	margin-left: 10px;
 	width: 113px;
 	height: 40px;
 	background: #FFFFFF;
@@ -60,10 +63,12 @@ header{
 	background-position: left 10px center;
 	padding: 8px 32px;
 }
-main{
-	margin-top: 40px;
-	height: 1300px;
-	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%); /* !градиент подложка фон*/
+main {
+	margin: 44px auto 60px;
+	padding: 0 8.4% 80px;
+	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+	/* !градиент подложка фон*/
+
 }
 	.restaurant{
 		display: flex;
@@ -106,90 +111,61 @@ main{
 	justify-content: space-between;
 }
 .cart{
-		display: inline-block;
-		background: #FFFFFF;
-		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05); /* !тень на карточке*/
+		display: inline;
+		background: #ffffff;
+		box-shadow: 0px 4px 12px rgb(0, 0, 0, 0,5); /* !тень на карточке*/
 		border-radius: 7px;
 		overflow: hidden;
 		margin-bottom: 30px;
-		flex-basis: 31%;   /* !процент занимаемой ширины*/
+		flex-basis: 32%;   /* !процент занимаемой ширины*/
 }
 .menu-image {
 	border-radius: 7px 7px 0px 0px;
 	width: 384px;
-	height: 250px;
+	height: 212px;
 	object-fit: cover; /*!обрезать картинку по размерам*/
 }
-/* .menu-text {
-	padding: 20px 23px 35px;
-} */
 .menu-title {
-	/* display: flex; */
-	margin: 25px 23px;
-	/* align-items: center; !центрировать по вертикали */
-	/* justify-content: space-between; */
+	margin: 24px 23px;
 }
 .dush{
 	font-size: 24px;
 	font-weight: normal;
+	margin-bottom: 10px;
 }
-.restoran {
-	font-style: normal;
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 32px;
-	margin: 0;
-	
-}
-.time {
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 20px;
-	color: #FFFFFF;
-	background: #262626;
-	border-radius: 3px;
-	padding: 1px 8px;
-	margin: 0;
-}
-.menu-reiting {
-	margin-top: 10px;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-}
-.reiting {
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 32px;
-	color: #FFC107;
-	padding: 0 22px;
-	background-image: url(../img/star.svg);
-	background-repeat: no-repeat;
-	background-position: left center;
-	padding-top: 3px;
-}
-/* .price {
-	font-style: normal;
+.composition{
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 32px;
+	line-height: 21px;
 	color: #8C8C8C;
-} */
-/* .category {
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 32px;
-	color: #8C8C8C;
-	background-image: url(../img/dot.svg);
-	background-repeat: no-repeat;
-	background-position: left 10px center;
-	padding-left: 28px;
-} */
+	margin-bottom: 25px;
+}
+.busket-price{
+	display: inline-flex;
+	margin: 0 24px 32px;
+}
+.in-busket{
+		width: 124px;
+		height: 40px;
+		background: #1890FF;
+		color: #FFFFFF;
+		border: none;
+		border-radius: 2px;
+		font-weight: normal;
+		font-size: 16px;
+		background-image: url(../img/busket-white.svg);
+		background-repeat: no-repeat;
+		background-position: right 16px center;
+		padding-left: 16px;
+	text-align: left;
+}
+.price-dish{
+	margin-left: 32px;
+	font-weight: bold;
+	font-size: 20px;
+}
 .footer{
-	/* width: 1200px; */
+	width: 1200px;
 	display: flex;
 	justify-content: space-between;
 	margin: 60px auto 60px;
