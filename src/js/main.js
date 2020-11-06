@@ -10,5 +10,3 @@ modalClose.addEventListener(`click`, function (event) {
 	modal.classList.remove(`is-open`)
 });
 
-
-new WOW().init();
