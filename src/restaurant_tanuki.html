@@ -8,17 +8,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style-restoran.css" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="css/style-restoran.css" />
+	<link rel="shortcut icon" href="#" type="image/x-icon">
   </head>
 
   <body>
       <header>
-        <img class="logo" src="img/logo.svg" alt="logo" />
+		  <a class="logo animate__animated animate__bounce" href="index.html">
+        <img  src="img/logo.svg" alt="logo" /></a>
         <input class="input enter" type="text" placeholder="Адрес доставки" />
         <div class="btn">
           <button class="btn-enter">Войти</button>
-          <button class="btn-busket">Корзина</button>
+          <button class="btn-busket" id="busket">Корзина</button>
         </div>
       </header>
     <main class="container">
@@ -33,7 +36,7 @@
         </div>
         <!-- ! МЕНЮ -->
         <container class="generalmenu">
-          <div class="cart">
+          <div class="cart animate__animated animate__backInUp  animate__slow">
             <div class="menu-image">
               <img src="/src/img/card-1.jpg" alt="блюдо 1" />
             </div>
@@ -52,7 +55,7 @@
               </div>
             </div>
 		  </div>
-          <div class="cart">
+          <div class="cart animate__animated animate__backInUp  animate__slow">
             <div class="menu-image">
               <img src="/src/img/card-2.jpg" alt="блюдо 1" />
             </div>
@@ -71,7 +74,7 @@
               </div>
             </div>
 		  </div>
-          <div class="cart">
+          <div class="cart animate__animated animate__backInUp  animate__slow">
             <div class="menu-image">
               <img src="/src/img/card-3.jpg" alt="блюдо 1" />
             </div>
@@ -90,7 +93,7 @@
               </div>
             </div>
 		  </div>
-          <div class="cart">
+          <div class="cart animate__animated animate__backInUp  animate__slow">
             <div class="menu-image">
               <img src="/src/img/card-4.jpg" alt="блюдо 1" />
             </div>
@@ -109,7 +112,7 @@
               </div>
             </div>
 		  </div>
-          <div class="cart">
+          <div class="cart animate__animated animate__backInUp  animate__slow">
             <div class="menu-image">
               <img src="/src/img/card-5.jpg" alt="блюдо 1" />
             </div>
@@ -128,7 +131,7 @@
               </div>
             </div>
 		  </div>
-          <div class="cart">
+          <div class="cart animate__animated animate__backInUp  animate__slow">
             <div class="menu-image">
               <img src="/src/img/card-6.jpg" alt="блюдо 1" />
             </div>
@@ -153,7 +156,7 @@
       <!-- ! ФУТЕР -->
       <footer class="footer">
         <div class="footer-menu">
-          <img src="img/logo.svg" alt="logo" />
+			<a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
           <nav class="navig">
             <a href="#" class="navig-link">Ресторанам</a>
             <a href="#" class="navig-link">Курьерам</a>
@@ -167,22 +170,63 @@
           <a href="#"><img src="img/login-vk.png" alt="vkontakte" /></a>
         </div>
       </footer>
-  </body>
   
-  <div class="modal">
-	  <div class="modal-header">
-		  <h3>Корзина</h3>
-		  <span class="modal-close">&times</span>
+	<div class="modal">
+  
+	  <div class="modal-dialog">
+		<div class="modal-header">
+			<h3>Корзина</h3>
+			<button class="modal-close" id="close">&times;</>
+		</div>
+		<div class="modal-foods">
+			<div class="modal-food">
+				<span сlass="food">Ролл угорь стандарт</span>
+				<span class="food-price">250 ₽</span>
+				<div class="modal-counter">
+					<button class="minus btn-counter">-</button>
+					<span class="counter">1</span>
+					<button class="plus btn-counter">+</button>
+				</div>
+			</div>
+			<div class="modal-food">
+				<span сlass="food">Ролл угорь стандарт</span>
+				<span class="food-price">250 ₽</span>
+				<div class="modal-counter">
+					<button class="minus btn-counter">-</button>
+					<span class="counter">1</span>
+					<button class="plus btn-counter">+</button>
+				</div>
+			</div>
+			<div class="modal-food">
+				<span сlass="food">Ролл угорь стандарт</span>
+				<span class="food-price">250 ₽</span>
+				<div class="modal-counter">
+					<button class="minus btn-counter">-</button>
+					<span class="counter">1</span>
+					<button class="plus btn-counter">+</button>
+				</div>
+			</div>
+			<div class="modal-food">
+				<span сlass="food">Ролл угорь стандарт</span>
+				<span class="food-price">250 ₽</span>
+				<div class="modal-counter">
+					<button class="minus btn-counter">-</button>
+					<span class="counter">1</span>
+					<button class="plus btn-counter">+</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<div class="cash">1250 ₽</div>
+			<div class="btn-modal">
+				<button class="order">Оформить заказ</button>
+				<button class="cancel">Отмена</button>
+			</div>
+		</div>
 	  </div>
-	  <div class="modal-foods">
-		  <div class="modal-food">
-			  <span>Ролл угорь стандарт</span>
-			  <span class="food-price">250 ₽</span>
-			  <button class="minus">-</button>
-			  <span class="counter">1</span>
-			  <button class="plus">=</button>
-		  </div>
 	  </div>
-  </div>
+	  <script src="js/main.js"></script>
+	  <script src="js/wow.min.js"
 
+  </body>
 </html>
